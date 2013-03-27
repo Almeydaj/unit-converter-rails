@@ -13,11 +13,17 @@ $ ->
     $("#from_unit").append "<select name='from_unit'>" +
                            "<option>Feet</option>" +
                            "<option>Meters</option>" +
+                           "<option>Miles</option>" +
+                           "<option>Kilometers</option>" +
+                           "<option>Yards</option>" +
                            "</select>"
     $("#to_unit select").remove()
     $("#to_unit").append "<select name='to_unit'>" +
                          "<option>Feet</option>" +
                          "<option>Meters</option>" +
+                         "<option>Miles</option>" +
+                         "<option>Kilometers</option>" +
+                         "<option>Yards</option>" +
                          "</select>"
 
   else if type_val is "Weight"
@@ -55,11 +61,13 @@ $ ->
     $("#from_unit").append "<select name='from_unit'>" +
                            "<option>Liters</option>" +
                            "<option>Gallons</option>" +
+                           "<option>Quarts</option>" +
                            "</select>"
     $("#to_unit select").remove()
     $("#to_unit").append "<select name='to_unit'>" +
                          "<option>Liters</option>" +
                          "<option>Gallons</option>" +
+                         "<option>Quarts</option>" +
                          "</select>"
 
 @ajaxSubmit = ->
